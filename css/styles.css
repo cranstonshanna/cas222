@@ -120,7 +120,7 @@ nav li a:hover {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 10px;
+    padding: 10px 100px;
 }
 
 table {
@@ -159,92 +159,65 @@ footer  {
 
 /* Form Styles */
 
-*,
-*:before,
-*:after {
-   box-sizing: border-box;
-}
-
-input,
-select,
-textarea {
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 form {
-  border: 1px solid #c6c7cc;
-  border-radius: 5px;
-  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  overflow: hidden;
-  width: 240px;
-  margin-bottom: 22px;
+	display: block;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 0.35em;
+	padding-bottom: 0.625em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	border: 2px solid;
+	text-align: center;
 }
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+input[type=text], input[type=email], input[type=tel] {
+	width: 100%;
+	padding: 10px;
 }
 
-input {
-  border-radius: 5px;
-  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+input[type=button], input[type=submit] {
+	background-color: rgb(255,0,0);
+	border: none;
+	color: #FFFFFF;
+	padding: 12px 24px;
+	text-decoration: none;
+	font-weight: bold;
 }
-
-.form-info {
-  padding: 20px 20px 0 20px;
-}
-
-.form-info label {
-  color: #666666;
-  cursor: pointer;
-  font-weight: 400;
-}
-
-.form-info input {
-  border: 1px solid #c6c9cc;
-  border-radius: 5px;
-  color: #888;
-  display: block;
-  margin: 5px 0 27px 0;
-  padding: 5px 8px;
-  background: #fff;
-  border: 1px solid #c6c7cc;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
-  color: #636466;
-  width: 100%;
-}
-
-.form-action {
-  background: #f0f0f2;
-  border-top: 1px solid #c6c7cc;
-  padding: 20px;
-}
-
-.form-action .btn {
-  background: rgb(255,0,0);
-  border: 0;
-  color: #fff;
-  cursor: pointer;
-  font-weight: bold;
-  float: left;
-  padding: 8px 16px;
-}
-
-.form-action label {
-  color: #7c7c80;
-  font-size: 12px;
-  float: left;
-  margin: 10px 0 0 20px;
-}  
 
 /* Div */
 
 #wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: 95%;
+}
+
+#form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%
+}
+
+#registerhero {
+    height: 400px;
+    background-image: url(../images/register-shoes.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#volunteerhero {
+	height: 400px;
+	background-image: url(../images/volunteer.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#contacthero {
+	height: 400px;
+	background-image: url(../images/contact.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 #mobile	{
@@ -260,10 +233,36 @@ input {
 @media only screen and (max-width: 1280px)
     
 {
-    
     body {
         margin: 0;
         padding: 0;
+    }
+	
+	h1 {
+        margin: 0;
+    }
+	
+	nav ul {
+        float: none;
+        width: auto;
+    }
+	
+	nav li {
+        display: inline-block;
+    }
+	
+	nav li a {
+        padding: .75em .75em;
+    }
+	
+	main {
+        padding: 1em;
+        margin-left: 0;
+        font-size: 90%;
+    }
+	
+	footer {
+        margin: 0;
     }
     
     #wrapper {
@@ -271,33 +270,10 @@ input {
         min-width: 0;
         margin: 0;
     }
-    
-    h1 {
-        margin: 0;
-    }
-    
-    nav ul {
-        float: none;
-        width: auto;
-    }
-    
-    nav li {
-        display: inline-block;
-    }
-    
-    nav li a {
-        padding: .75em .75em;
-    }
-    
-    main {
-        padding: 1em;
-        margin-left: 0;
-        font-size: 90%;
-    }
-    
-    footer {
-        margin: 0;
-    }
+	
+	#form {
+		width: 50%
+	}
 }
 
 /* Mobile Styles */
@@ -310,27 +286,34 @@ input {
         padding-bottom: 2em;
         margin: auto;
     }
+	
+	main {
+		padding: 1em;
+		margin-left: 0;
+		font-size: 80%;
+	}
     
     main img {
         width: 90%;
     }
-
-    #wrapper {
-        width: auto;
-    }
-    
-    h1 	{
+	
+	h1 {
         font-size: 2em;
         text-align: center;
         padding-left: 0;
     }
-    
-    nav ul	{
-        float: none;
+	
+	nav ul {
+    	list-style-type: none;
+    	margin: 0;
+    	overflow: hidden;
+    	background-color: rgb(255,0,0);
+		float: none;
         width: auto;
-        }
-    
-    nav li 	{
+	}
+	
+	nav li {
+    	font-size: 16px;
 		display: inline-block;
 	}
 	
@@ -338,17 +321,23 @@ input {
 		padding: .75em .75em;
 	}
 	
-	main 	{
-		padding: 1em;
-		margin-left: 0;
-		font-size: 80%;
-	}
-
-	label 	{
+	label {
 		display: block;
 		text-align: center;
 		font-weight: bold;
 		width: 10em;
+	}
+	
+	table, th, td {
+    	padding: 10px 50px;
+	}
+
+    #wrapper {
+        width: auto;
+    }
+	
+	#form {
+		width: 80%;
 	}
 	
 	footer {

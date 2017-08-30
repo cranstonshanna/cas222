@@ -1,0 +1,92 @@
+/* Main Styles */
+
+body {
+    background-color: #FFF;
+}
+
+header {
+	background-color: #FFF;
+}
+
+h2 {
+	background-color: #000;
+}
+
+h3 {
+    color: rgb(255,0,0);
+}
+
+/* Navigation Styles */
+
+nav ul 	{
+    background-color: rgb(255,0,0);
+}
+
+nav li a:hover {
+    background-color: #000;
+}
+
+/* Slideshow Styles */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  background-color: #bbb;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Table Styles */
+
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+table#t01 th {
+    background-color: black;
+}
+
+table#t02 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t02 tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+table#t02 th {
+    background-color: black;
+}
+
+table#t03 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t03 tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+table#t03 th {
+    background-color: black;
+}
+
+/* Footer Styles */
+
+footer  {
+    background-color: #FFF;
+}
+
+/* Form Styles */
+
+input[type=button], input[type=submit] {
+	background-color: rgb(255,0,0);
+}

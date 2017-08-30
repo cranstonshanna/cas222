@@ -1,0 +1,139 @@
+/* Main Styles */
+
+body {
+	color: #000;
+    font-family: Verdana, arial, sans-serif;
+	font-size: 1.25em;
+}
+
+header {
+	font-family: Verdana, arial, sans-serif;
+    color: #000;
+}
+
+h2 {
+	color: #FFF;
+    font-family: Georgia, serif;
+}
+
+p {
+	font-size: 14px;
+    text-indent: 0em;
+    display: block;
+    text-align: left;
+}
+
+ul {
+	font-size: 14px;
+    text-indent: 0em;
+    display: block;
+    text-align: left;
+}
+
+ol {
+	font-size: 14px;
+    text-indent: 0em;
+    display: block;
+    text-align: left;
+}
+
+dl {
+    text-align: left;
+}
+
+dt {
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+
+nav li {
+    float: left;
+    font-size: 18px;
+}
+
+nav li a {
+    display: block;
+    color: #FFF;
+    text-align: center;
+	text-decoration: none;
+}
+
+/* Slideshow Styles */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+}
+
+/* Table Styles */
+
+table, th, td {
+	font-size: .9em;
+}
+
+td {
+    text-align: left;
+}
+
+table#t01 th {
+    color: white;
+}
+
+table#t02 th {
+    color: white;
+}
+
+table#t03 th {
+    color: white;
+}
+
+/* Footer Styles */
+
+footer {
+	color: #000;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Form Styles */
+
+form {
+	text-align: center;
+}
+
+input[type=button], input[type=submit] {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 1280px) {
+	main {
+        font-size: 90%;
+    }
+}
+	
+@media only all and (max-width: 640px) {
+	main {
+		font-size: 80%;
+	}
+	
+	h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+	
+	nav li {
+    	font-size: 16px;
+	}
+	
+	label {
+		text-align: center;
+		font-weight: bold;
+	}
+}
+
